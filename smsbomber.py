@@ -165,12 +165,7 @@ def main():
             Thread(target=torob, args=[phone]).start()
             Thread(target=bama, args=[phone]).start()
             os.system("killall -HUP tor")
-            time.sleep(1)
-
-    for i in range(xxx):
-        thread = threading.Thread(target=attack)
-        thread.start()
-
-
+            time.sleep(0.5)
+            
 if __name__ == "__main__":
     main()
